@@ -12,6 +12,9 @@
     </head>
     <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
         {% block body %} {% endblock %}
-        <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+        <script
+            src="{{ url_for('static', filename='scripts/index.js') }}"
+            defer
+        ></script>
     </body>
 </html>
